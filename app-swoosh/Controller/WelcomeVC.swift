@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  WelcomeVC.swift
 //  app-swoosh
 //
 //  Created by Scott Feier on 2/4/20.
@@ -8,9 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    @IBOutlet weak var swoosh: UIImageView!
-    @IBOutlet weak var bgImg: UIImageView!
+class WelcomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +16,7 @@ class ViewController: UIViewController {
         
         // manual way to center swoosh logo in the frame
     }
-    @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue) {
+    @IBAction func unwindFromLeagueVC(unwindSegue: UIStoryboardSegue) {
         
     }
     

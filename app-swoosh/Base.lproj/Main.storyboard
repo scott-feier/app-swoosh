@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Screen1VC-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Screen1VC" customClass="ViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,7 +38,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3FF-PG-Lln" kind="show" id="OsF-sb-xMg"/>
+                                    <segue destination="3FF-PG-Lln" kind="show" id="93P-OH-QNT"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7x-Xs-lVu">
@@ -78,19 +78,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="bgImg" destination="TzB-e9-Lzv" id="uEx-nE-OHZ"/>
-                        <outlet property="swoosh" destination="3Cu-4X-Lze" id="YKH-yM-tj6"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="138.98050974512745"/>
         </scene>
-        <!--Screen2VC-->
+        <!--LeagueVC-->
         <scene sceneID="aQg-ME-ik5">
             <objects>
-                <viewController id="3FF-PG-Lln" userLabel="Screen2VC" sceneMemberID="viewController">
+                <viewController id="3FF-PG-Lln" userLabel="LeagueVC" customClass="LeagueVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cVK-Ri-pL8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,11 +95,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yP-CR-cCe">
-                                <rect key="frame" x="7" y="7" width="74" height="24"/>
+                                <rect key="frame" x="7" y="7" width="80" height="24"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.85222271120000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="TNJ-ec-ctp"/>
+                                </constraints>
                                 <state key="normal" title=" Back" image="backButton"/>
                                 <connections>
-                                    <segue destination="Ar3-1x-sR9" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="7op-ai-ZzM"/>
+                                    <segue destination="Ar3-1x-sR9" kind="unwind" unwindAction="unwindFromLeagueVCWithUnwindSegue:" id="zWp-N4-r3y"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="ufb-gh-Wjl" userLabel="Stack Head">
@@ -169,7 +168,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="uah-Zg-u2h" kind="show" id="ARb-sg-40J"/>
+                                    <segue destination="uah-Zg-u2h" kind="show" id="5Mc-Tb-f3j"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -200,10 +199,10 @@
             </objects>
             <point key="canvasLocation" x="900" y="138.98050974512745"/>
         </scene>
-        <!--Screen3VC-->
+        <!--SkillVC-->
         <scene sceneID="O6F-gc-FBJ">
             <objects>
-                <viewController id="uah-Zg-u2h" userLabel="Screen3VC" sceneMemberID="viewController">
+                <viewController id="uah-Zg-u2h" customClass="SkillVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RR2-9a-VIy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -264,9 +263,15 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLE-Fx-OcO" userLabel="Back">
-                                <rect key="frame" x="7" y="7" width="74" height="24"/>
+                                <rect key="frame" x="7" y="7" width="80" height="24"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.85222271120000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="t5W-0U-EE9"/>
+                                </constraints>
                                 <state key="normal" title=" Back" image="backButton"/>
+                                <connections>
+                                    <segue destination="bJ5-Gx-YSE" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="qDC-p0-f3e"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -292,6 +297,7 @@
                     <navigationItem key="navigationItem" id="E9I-6o-ohb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QBN-2j-xOc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="bJ5-Gx-YSE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1693.5999999999999" y="163.26836581709148"/>
         </scene>
