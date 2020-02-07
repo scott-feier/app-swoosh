@@ -48,7 +48,7 @@ class LeagueVC: UIViewController {
     
     
     @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue) {
-        player = nil
+        player.desiredLeague = nil
         nextBtn.isEnabled = false
      }
     
