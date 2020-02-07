@@ -168,7 +168,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="uah-Zg-u2h" kind="show" id="5Mc-Tb-f3j"/>
+                                    <action selector="onNextTapped:" destination="3FF-PG-Lln" eventType="touchUpInside" id="63A-vZ-hCz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -193,6 +193,9 @@
                         <viewLayoutGuide key="safeArea" id="Mya-0Z-vEa"/>
                     </view>
                     <navigationItem key="navigationItem" id="qmx-Kh-tNG"/>
+                    <connections>
+                        <segue destination="uah-Zg-u2h" kind="show" identifier="skillVCSegue" id="rBm-KK-Gq8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i5Y-Ne-0jw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Ar3-1x-sR9" userLabel="Exit" sceneMemberID="exit"/>
@@ -299,7 +302,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QBN-2j-xOc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="bJ5-Gx-YSE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1693.5999999999999" y="163.26836581709148"/>
+            <point key="canvasLocation" x="2041" y="139"/>
         </scene>
     </scenes>
     <resources>
